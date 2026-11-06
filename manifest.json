@@ -1,0 +1,196 @@
+{
+  "name": "91图图",
+  "uuid": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+  "iconUrl": "https://91tutu.cc/favicon.svg",
+  "describe": "91tutu.cc 图源：最新套图、R18/R17/R16 分级、尺度分类、标签与作者浏览，支持原图打包阅读。",
+  "version": "1.0.0",
+  "home": "https://github.com/operit-ai/Breeze-plugin-91tutu",
+  "updateUrl": "https://github.com/operit-ai/Breeze-plugin-91tutu/releases/latest/download/manifest.json",
+  "npmName": "breeze-plugin-91tutu",
+  "function": [
+    {
+      "id": "latest",
+      "title": "最新更新",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · 最新更新",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "latest"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "latest"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "r18",
+      "title": "R18 分区",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · R18",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "category",
+                  "key": "R18"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "category",
+                "key": "R18"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "r17",
+      "title": "R17 分区",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · R17",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "category",
+                  "key": "R17"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "category",
+                "key": "R17"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "r16",
+      "title": "R16 分区",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · R16",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "category",
+                  "key": "R16"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "category",
+                "key": "R16"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "explicit",
+      "title": "显式尺度",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · 尺度",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "scale",
+                  "key": "explicit"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "scale",
+                "key": "explicit"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "healthy",
+      "title": "健康尺度",
+      "action": {
+        "type": "openComicList",
+        "payload": {
+          "scene": {
+            "title": "91图图 · 尺度",
+            "source": "99fe583b-0cbd-4307-b595-577bb35bdd12",
+            "body": {
+              "type": "pluginPagedComicList",
+              "request": {
+                "fnPath": "getRankingData",
+                "core": {},
+                "extern": {
+                  "kind": "scale",
+                  "key": "healthy"
+                }
+              }
+            },
+            "filter": {
+              "fnPath": "getRankingFilterBundle",
+              "extern": {
+                "kind": "scale",
+                "key": "healthy"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
