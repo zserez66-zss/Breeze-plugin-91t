@@ -42,8 +42,8 @@ export function buildPluginInfo(): InfoContract {
     iconUrl: `${SITE_ORIGIN}/favicon.svg`,
     describe: "91tutu.cc 图源：最新套图、R18/R17/R16 分级、尺度分类、标签与作者浏览，支持原图打包阅读。",
     version: "1.0.0",
-    home: "https://github.com/operit-ai/Breeze-plugin-91tutu",
-    updateUrl: "https://github.com/operit-ai/Breeze-plugin-91tutu/releases/latest/download/manifest.json",
+    home: "https://github.com/zserez66-zss/Breeze-plugin-91t",
+    updateUrl: "https://github.com/zserez66-zss/Breeze-plugin-91t/releases/latest/download/manifest.json",
     npmName: "breeze-plugin-91tutu",
     function: [
       buildEntry("latest", "最新更新", "91图图 · 最新更新", { kind: "latest" }),
